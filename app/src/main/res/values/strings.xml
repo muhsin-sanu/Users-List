@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">User Management</string>
+    <string name="users_title">Users</string>
+    <string name="search_hint">Search users by name, email, or role…</string>
+    <string name="loading_users">Loading users…</string>
+    <string name="loading_more">Loading more…</string>
+    <string name="no_users_found">No users found</string>
+    <string name="no_users_found_desc">Try searching for something else or refreshing the list.</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="offline_mode_active">Offline mode: Showing cached users</string>
+    <string name="user_detail_title">User Details</string>
+    <string name="section_contact">Contact Information</string>
+    <string name="section_work">Work &amp; Company</string>
+    <string name="section_address">Address &amp; Location</string>
+    <string name="label_email">Email</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_age">Age</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_blood_group">Blood Group</string>
+    <string name="label_birth_date">Birth Date</string>
+    <string name="label_role">Role</string>
+    <string name="label_company">Company</string>
+    <string name="label_department">Department</string>
+    <string name="label_title">Title</string>
+    <string name="label_address">Street Address</string>
+    <string name="label_city">City &amp; State</string>
+    <string name="label_country">Country</string>
+    <string name="label_postal_code">Postal Code</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="refresh">Refresh</string>
+    <string name="back">Back</string>
+</resources>

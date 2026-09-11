@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_avatar_placeholder"
+            android:contentDescription="User Avatar"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tvRoleBadge"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toTopOf="@id/ivAvatar"
+            tools:text="Emily Johnson" />
+
+        <TextView
+            android:id="@+id/tvRoleBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_role_badge"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/primary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvUserName"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            tools:text="Admin" />
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/text_secondary"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvUserName"
+            tools:text="emily.johnson@x.dummyjson.com" />
+
+        <TextView
+            android:id="@+id/tvUserPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/text_tertiary"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvUserEmail"
+            tools:text="+81 965-431-3024" />
+
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Open Details"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
